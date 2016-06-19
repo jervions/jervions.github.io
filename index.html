@@ -243,6 +243,113 @@
             
               
                 
+                <a class="post-title-link" href="/blog/2016/06/19/OnePlus3-unlock-root-xposed.html" itemprop="url">
+                  OnePlus3-unlock-root-xposed
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-19T22:15:47+08:00" content="2016-06-19">
+              2016-06-19
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2016/06/19/OnePlus3-unlock-root-xposed.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="/blog/2016/06/19/OnePlus3-unlock-root-xposed.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>时隔这么久，第二篇终于更新啦！最近购买了一加3手机，作为一个伪极客，我把它解锁，root，刷Xposed了，并在Ubuntu 16.04上编译了它的源码，等两天再刷，哈哈！今天先来第一件，解锁root和刷Xposed。</p>
+<h2 id="开发者模式"><a href="#开发者模式" class="headerlink" title="开发者模式"></a>开发者模式</h2><p>点击4次以上的Android6.0.1的版本号区域，开启开发者模式，进入开发者模式开启“允许OME解锁”，并开启USB选项。电脑连接手机，安装驱动。</p>
+<h2 id="解锁"><a href="#解锁" class="headerlink" title="解锁"></a>解锁</h2><p>我们通常所说的<a href="http://zhidao.baidu.com/link?url=NBqXYC10Kkb13dBiDDyzsI7A35WNmNEetYNAr3pFFS6EvQF_kqEe5T8kVVwRKnCDmG8V_CZzMMGE8BX8AaSdd_" target="_blank" rel="external">解锁</a>是解bootloader，解锁了bootloader才能刷入recovery。<br>这里我直接用了<a href="http://bbs.ydss.cn/thread-643331-1-1.html" target="_blank" rel="external">移动叔叔的工具</a>[<a href="http://pan.baidu.com/s/1nuBmtYD" target="_blank" rel="external">http://pan.baidu.com/s/1nuBmtYD</a> 密码：8yq0]和<a href="http://www.oneplusbbs.com/thread-2780749-1-1.html" target="_blank" rel="external">一加社区的工具</a>[<a href="http://pan.baidu.com/s/1byH0Do" target="_blank" rel="external">http://pan.baidu.com/s/1byH0Do</a> 密码：m8bb]，这里一加社区的工具我用来解锁的，移动叔叔的工具用来刷入的TWRP的recovery</p>
+<h2 id="刷TWRP"><a href="#刷TWRP" class="headerlink" title="刷TWRP"></a>刷TWRP</h2><p>这里用移动叔叔的工具刷入TWRP。</p>
+<h2 id="root"><a href="#root" class="headerlink" title="root"></a>root</h2><p>刷入TWRP后，把supersu-beta.zip拷贝到手机里。重启进入recovery，刷superse的这个包，再次重启进入系统，电脑用ADB连接手机就可以使用su权限了。</p>
+<h2 id="刷入Xposed"><a href="#刷入Xposed" class="headerlink" title="刷入Xposed"></a>刷入Xposed</h2><p>这里还是<a href="http://bbs.ydss.cn/thread-643632-1-1.html" target="_blank" rel="external">移动叔叔的XP</a>(<a href="http://pan.baidu.com/s/1dFqemWD" target="_blank" rel="external">http://pan.baidu.com/s/1dFqemWD</a> 密码：81h0)，进入recovery刷xposed-v85-sdk23-arm64.zip，重启进手机系统，再安装xposed.installer-3.0alpha4-37.apk</p>
+<h2 id="以后更新如何下载编译OnePlusOSS"><a href="#以后更新如何下载编译OnePlusOSS" class="headerlink" title="以后更新如何下载编译OnePlusOSS"></a>以后更新如何下载编译OnePlusOSS</h2><p>地址<a href="https://github.com/OnePlusOSS/android">OnePlusOSS</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/blog/2016/06/01/Build-Jervions.html" itemprop="url">
                   Build Jervions Blog
                 </a>
@@ -482,7 +589,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -492,7 +599,7 @@
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
